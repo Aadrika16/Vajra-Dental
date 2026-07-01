@@ -1,0 +1,387 @@
+.appointment-section {
+  padding: 100px 0;
+  background: transparent;
+}
+
+.appointment-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.appointment-card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(181, 122, 68, 0.12);
+  border-radius: 42px;
+  padding: 55px;
+}
+
+.appointment-card h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #1f1712;
+  margin-bottom: 10px;
+}
+
+.appointment-card > p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 32px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0.8px;
+  margin-left: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 0 22px;
+  font-size: 15px;
+  color: #222;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(181, 122, 68, 0.55);
+  box-shadow: 0 0 0 4px rgba(181, 122, 68, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.form-group textarea {
+  height: 120px;
+  padding: 20px 24px;
+  resize: none;
+}
+
+.full {
+  grid-column: 1 / -1;
+  margin-top: 28px;
+}
+
+.toggle-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.toggle-card {
+  height: 72px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.toggle-card span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1712;
+}
+
+.toggle-options {
+  display: flex;
+  padding: 4px;
+  background: #f2f2f2;
+  border-radius: 999px;
+}
+
+.toggle-options button {
+  min-width: 58px;
+  height: 38px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.toggle-options button.active {
+  background: linear-gradient(135deg, #b57a44, #8b5e34);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(181, 122, 68, 0.25);
+}
+
+.existing-patient-form,
+.emergency-form {
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(181, 122, 68, 0.18);
+  animation: fadeSlide 0.3s ease;
+}
+
+.existing-patient-form h3,
+.emergency-form h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #b57a44;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.upload-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 54px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #b57a44, #8b5e34);
+  color: #fff !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 !important;
+  letter-spacing: 0;
+}
+
+.upload-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(181, 122, 68, 0.28);
+}
+
+.file-name {
+  color: #555;
+  font-size: 15px;
+  word-break: break-word;
+  flex: 1;
+}
+
+.appointment-submit {
+  width: 100%;
+  height: 64px;
+  margin-top: 35px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #b57a44, #8b5e34);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 30px rgba(181, 122, 68, 0.25);
+}
+
+.appointment-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px rgba(181, 122, 68, 0.35);
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .appointment-section {
+    padding: 80px 0;
+  }
+
+  .appointment-card {
+    padding: 42px 35px;
+    border-radius: 36px;
+  }
+
+  .appointment-card h2 {
+    font-size: 38px;
+  }
+
+  .form-grid,
+  .toggle-row {
+    gap: 24px;
+  }
+
+  .toggle-card {
+    padding: 0 18px;
+  }
+
+  .toggle-card span {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .appointment-section {
+    padding: 70px 0;
+  }
+
+  .appointment-container {
+    width: 92%;
+  }
+
+  .appointment-card {
+    padding: 30px 22px;
+    border-radius: 30px;
+  }
+
+  .appointment-card h2 {
+    font-size: 34px;
+  }
+
+  .appointment-card > p {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .form-grid,
+  .toggle-row {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .full {
+    grid-column: auto;
+    margin-top: 22px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .form-group textarea {
+    height: 115px;
+  }
+
+  .toggle-card {
+    height: auto;
+    padding: 18px;
+    gap: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-options {
+    width: 100%;
+  }
+
+  .toggle-options button {
+    flex: 1;
+  }
+
+  .existing-patient-form,
+  .emergency-form {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+
+  .existing-patient-form h3,
+  .emergency-form h3 {
+    font-size: 26px;
+  }
+
+  .custom-file-upload {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .upload-btn {
+    width: 100%;
+  }
+
+  .file-name {
+    font-size: 14px;
+  }
+
+  .appointment-submit {
+    height: 58px;
+    font-size: 16px;
+    margin-top: 28px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .appointment-card {
+    padding: 26px 16px;
+    border-radius: 26px;
+  }
+
+  .appointment-card h2 {
+    font-size: 30px;
+  }
+
+  .form-group label {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+
+  .toggle-card span {
+    font-size: 15px;
+  }
+
+  .existing-patient-form,
+  .emergency-form {
+    padding: 20px 14px;
+  }
+
+  .upload-btn {
+    min-width: 100%;
+    height: 52px;
+  }
+}
+.no-margin {
+  margin-top: 0;
+}
+
+.emergency-grid {
+  margin-top: 28px;
+}

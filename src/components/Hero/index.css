@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+/* HERO SECTION */
+
+.hero {
+  padding: 120px 0 80px;
+  margin-top: -80px;
+  background: linear-gradient(
+    90deg,
+    #f8f4ee 0%,
+    #f6f0e8 35%,
+    #efdccf 100%
+  );
+  overflow: hidden;
+}
+
+.hero-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.hero-content {
+  width: 100%;
+  max-width: 620px;
+}
+
+.hero-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #b07a43;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero-subtitle::before {
+  content: "";
+  width: 45px;
+  height: 1px;
+  background: #b07a43;
+}
+
+.hero-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  color: #111;
+  margin: 25px 0;
+}
+
+.hero-title span {
+  color: #b07a43;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.hero-content p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: #a36d3c;
+  color: #fff;
+}
+
+.secondary-btn {
+  background: #fff;
+  color: #111;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* FEATURE PILLS */
+
+.hero-features {
+  margin-top: 35px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.feature-pill {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  border-radius: 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.feature-pill:hover {
+  transform: translateY(-3px);
+}
+
+.feature-icon {
+  color: #b07a43;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.feature-pill p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* IMAGE */
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 640px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 40px;
+  display: block;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .hero-container {
+    gap: 55px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .hero-image img {
+    max-width: 580px;
+    height: 590px;
+  }
+
+  .feature-pill {
+    min-width: 235px;
+  }
+
+  .feature-pill p {
+    font-size: 14px;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 100px 0 70px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-image {
+    order: -1;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 540px;
+    height: 520px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 58px;
+  }
+
+  .hero-content p {
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-features {
+    justify-content: center;
+  }
+
+  .feature-pill {
+    flex: unset;
+    min-width: 280px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 80px 0 60px;
+  }
+
+  .hero-container {
+    width: 92%;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+    gap: 10px;
+  }
+
+  .hero-subtitle::before {
+    width: 25px;
+  }
+
+  .hero-title {
+    font-size: 46px;
+    line-height: 1;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 420px;
+    border-radius: 24px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .feature-pill {
+    width: 100%;
+    min-width: 100%;
+    padding: 16px 18px;
+  }
+
+  .feature-pill p {
+    font-size: 14px;
+    white-space: normal;
+    line-height: 1.4;
+  }
+}

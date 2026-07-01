@@ -1,0 +1,169 @@
+.footer {
+  background: #312724;
+  color: #fff;
+  padding: 90px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  width: 92%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.3fr 1.3fr 1fr;
+  gap: 70px;
+  padding-bottom: 70px;
+}
+
+.footer-logo {
+  width: 160px;
+  border-radius: 28px;
+  margin-bottom: 35px;
+}
+
+.footer-brand p {
+  color: #d5cdc7;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d79a62;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+
+.footer-icon-text {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  color: #e7e1db;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.footer-icon-text svg {
+  color: #d79a62;
+  font-size: 20px;
+  margin-top: 8px;
+  min-width: 20px;
+}
+
+.direction-link {
+  color: #d79a62;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 24px;
+  color: #e7e1db;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  margin-top: 25px;
+  border: none;
+  padding: 18px 34px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #e8a264,
+    #b56b36
+  );
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(215, 154, 98, 0.2);
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #d5cdc7;
+  font-size: 15px;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .footer-column h3 {
+    font-size: 34px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 70px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .footer-logo {
+    width: 130px;
+  }
+
+  .footer-column h3 {
+    font-size: 28px;
+  }
+
+  .footer-brand p,
+  .footer-links li,
+  .footer-icon-text,
+  .footer-bottom p {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

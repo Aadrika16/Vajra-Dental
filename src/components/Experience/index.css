@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #faf8f5;
+}
+
+.experience-section {
+  padding: 90px 0;
+  background: #faf8f5;
+  overflow: hidden;
+}
+
+.experience-container {
+  width: 90%;
+  max-width: 1450px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 70px;
+  align-items: center;
+}
+
+.experience-content {
+  width: 100%;
+  max-width: 620px;
+}
+
+.experience-tag {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #b67c49;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.experience-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  line-height: 1.08;
+  font-weight: 500;
+  color: #2b2118;
+  margin-bottom: 36px;
+  max-width: 620px;
+}
+
+.experience-title span {
+  color: #b67c49;
+  font-style: italic;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background: #b67c49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.experience-text h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #b67c49;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.experience-text p {
+  font-size: 15px;
+  color: #6d655e;
+  line-height: 1.5;
+  max-width: 520px;
+}
+
+.experience-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.experience-image img {
+  width: 100%;
+  max-width: 800px;
+  height: 700px;
+  object-fit: cover;
+  object-position: right center;
+  border-radius: 26px;
+  display: block;
+}
+/* Laptop */
+@media (max-width: 1200px) {
+  .experience-container {
+    grid-template-columns: 48% 52%;
+    gap: 45px;
+  }
+
+  .experience-title {
+    font-size: 46px;
+  }
+
+  .experience-text h4 {
+    font-size: 26px;
+  }
+
+  .experience-image img {
+    height: 560px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .experience-image {
+    order: -1;
+    justify-content: center;
+  }
+
+  .experience-content {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .experience-title {
+    font-size: 44px;
+    max-width: 100%;
+  }
+
+  .experience-image img {
+    max-width: 650px;
+    height: 500px;
+    object-position: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 0;
+  }
+
+  .experience-container {
+    width: 92%;
+    gap: 35px;
+  }
+
+  .experience-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .experience-title {
+    font-size: 36px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  .experience-title span {
+    display: inline;
+  }
+
+  .experience-list {
+    gap: 24px;
+  }
+
+  .experience-item {
+    gap: 14px;
+  }
+
+  .icon-box {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 15px;
+  }
+
+  .experience-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .experience-text h4 {
+    font-size: 24px;
+    line-height: 1.15;
+  }
+
+  .experience-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .experience-image img {
+    height: 380px;
+    border-radius: 18px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .experience-container {
+    width: 94%;
+  }
+
+  .experience-title {
+    font-size: 31px;
+    line-height: 1.18;
+  }
+
+  .experience-item {
+    gap: 12px;
+  }
+
+  .icon-box {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    font-size: 14px;
+  }
+
+  .experience-text h4 {
+    font-size: 21px;
+  }
+
+  .experience-text p {
+    font-size: 13px;
+  }
+
+  .experience-image img {
+    height: 300px;
+  }
+}
