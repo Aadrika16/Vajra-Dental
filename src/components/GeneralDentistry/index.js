@@ -1,9 +1,9 @@
-import { MessageCircleMore } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "./index.css";
 
-const Services = () => {
+const GeneralDentistry = () => {
   return (
     <>
       <Navbar />
@@ -34,7 +34,7 @@ const Services = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now"><MessageCircleMore size={18} /> Book Now</button>
+                  <button className="book-now"><MessageCircle size={18} /> Book Now</button>
                 </div>
               ))}
             </div>
@@ -50,7 +50,7 @@ const Services = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now"><MessageCircleMore size={18} /> Book Now</button>
+                  <button className="book-now"><MessageCircle size={18} /> Book Now</button>
                 </div>
               ))}
             </div>
@@ -66,7 +66,7 @@ const Services = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now"><MessageCircleMore size={18} /> Book Now</button>
+                  <button className="book-now"><MessageCircle size={18} /> Book Now</button>
                 </div>
               ))}
             </div>
@@ -79,6 +79,9 @@ const Services = () => {
             <h2>Crowns & Prosthetics</h2>
             <div className="category-grid">
               {[
+                {title: "Veneers", description: "Premium metal-free crowns with lifelike translucency and lasting strength." },
+                { title: "Onlays", description: "Custom-crafted full dentures restoring function, comfort and confidence." },
+                { title: "Inlays", description: "Permanent, natural-looking tooth replacement that preserves bone health." },
                 { title: "Metal Ceramic Crown", description: "Durable, aesthetic crowns offering strength and a natural appearance." },
                 { title: "Zirconia Crown", description: "Premium metal-free crowns with lifelike translucency and lasting strength." },
                 { title: "Complete Denture", description: "Custom-crafted full dentures restoring function, comfort and confidence." },
@@ -88,7 +91,7 @@ const Services = () => {
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <button className="book-now">
-                    <MessageCircleMore size={18} /> Book Now
+                    <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
               ))}
@@ -112,7 +115,7 @@ const Services = () => {
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <button className="book-now">
-                    <MessageCircleMore size={18} /> Book Now
+                    <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
               ))}
@@ -135,7 +138,7 @@ const Services = () => {
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <button className="book-now">
-                    <MessageCircleMore size={18} /> Book Now
+                    <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
               ))}
@@ -155,7 +158,7 @@ const Services = () => {
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <button className="book-now">
-                    <MessageCircleMore size={18} /> Book Now
+                    <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
               ))}
@@ -168,4 +171,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default GeneralDentistry;

@@ -85,7 +85,7 @@ body { font-family: "Poppins", sans-serif; background: #faf8f5; color: #2c241c; 
   width: 100%;
 }
 .book-now:hover { 
-  background: #946a4c; 
+   background: linear-gradient(90deg, #c36e31 0%, #886145 100%);  
   transform: translateY(-2px);
 }
 
