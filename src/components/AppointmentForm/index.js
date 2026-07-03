@@ -4,7 +4,7 @@ import "./index.css";
 const AppointmentForm = () => {
   const [existingPatient, setExistingPatient] = useState("No");
   const [emergency, setEmergency] = useState("No");
-  const [reportFile, setReportFile] = useState(null);
+  
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -78,7 +78,7 @@ const AppointmentForm = () => {
     // 2. Reset toggles and file if needed
     setExistingPatient("No");
     setEmergency("No");
-    setReportFile(null);
+   
   };
 
   return (
