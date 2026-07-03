@@ -64,7 +64,7 @@ const Treatments = () => {
 
               <p>{item.desc}</p>
               <div className="btn-con">
-                <button className="book-btn" onClick={handleBookAppointment}>
+                <button className="treatment-book-btn" onClick={handleBookAppointment}>
                   BOOK NOW
                 </button>
                 <button className="learn-btn">
