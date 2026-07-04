@@ -3,17 +3,23 @@ import {
   FaWhatsapp,
   FaPhoneAlt,
   FaAward,
-  FaMagic
+  FaMagic,
 } from "react-icons/fa";
 
-
 const Hero = () => {
+  // Contact Details
+  const whatsappNumber = "919542345000"; // Country code without +
+  const phoneNumber = "+919542345000";
+
+  // Pre-filled WhatsApp message
+  const whatsappMessage = encodeURIComponent(
+    "Hi Vajra Dental, I would like to book an appointment."
+  );
+
   return (
     <section className="hero">
       <div className="container hero-container">
-
         <div className="hero-content">
-
           <span className="hero-subtitle">
             Premium Dental Care · Hyderabad
           </span>
@@ -33,27 +39,26 @@ const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="primary-btn">
+            <a
+              href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+              className="primary-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaWhatsapp />
-              Book on WhatsApp
-            </button>
+              <span>Book on WhatsApp</span>
+            </a>
 
-            <button className="secondary-btn">
+            <a
+              href={`tel:${phoneNumber}`}
+              className="secondary-btn"
+            >
               <FaPhoneAlt />
-              Call Now
-            </button>
+              <span>Call Now</span>
+            </a>
           </div>
 
           <div className="hero-features">
-             {/*
-
-            <div className="feature-pill">
-             
-              <FaRegCalendarAlt className="feature-icon" />
-              <p>Founded 2021</p>
-            </div>
-            */}
-
             <div className="feature-pill">
               <FaAward className="feature-icon" />
               <p>12+ Yrs Doctor Experience</p>
@@ -63,9 +68,7 @@ const Hero = () => {
               <FaMagic className="feature-icon" />
               <p>Advanced Implants & Smile Care</p>
             </div>
-
           </div>
-
         </div>
 
         <div className="hero-image">
@@ -74,7 +77,6 @@ const Hero = () => {
             alt="Vajra Dental"
           />
         </div>
-
       </div>
     </section>
   );

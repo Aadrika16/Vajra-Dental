@@ -21,7 +21,7 @@ const AppointmentForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "8247805403";
+    const phone = "919542345000";
 
     const whatsappMessage = `
     *New Appointment Request*
@@ -140,11 +140,42 @@ const AppointmentForm = () => {
             {existingPatient === "Yes" && (
               <div className="existing-patient-form">
                 <h3>Existing Patient Details</h3>
+
                 <div className="form-grid">
-                  <input name="patientId" type="text" placeholder="Patient ID" onChange={handleInputChange} />
-                  <input name="lastVisit" type="date" onChange={handleInputChange} />
-                  <input name="doctor" type="text" placeholder="Doctor name" onChange={handleInputChange} />
-                  <input name="treatment" type="text" placeholder="Previous treatment" onChange={handleInputChange} />
+                  <div className="form-group">
+                    <input
+                      name="patientId"
+                      type="text"
+                      placeholder="Patient ID"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <input
+                      name="lastVisit"
+                      type="date"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <input
+                      name="doctor"
+                      type="text"
+                      placeholder="Doctor name"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <input
+                      name="treatment"
+                      type="text"
+                      placeholder="Previous treatment"
+                      onChange={handleInputChange}
+                    />
+                  </div>
                 </div>
               </div>
             )}
@@ -152,13 +183,40 @@ const AppointmentForm = () => {
             {emergency === "Yes" && (
               <div className="emergency-form">
                 <h3>Emergency Details</h3>
+
                 <div className="form-grid">
-                  <input name="nature" type="text" placeholder="Nature of emergency" onChange={handleInputChange} />
-                  <input name="pain" type="number" placeholder="Pain level (1-10)" onChange={handleInputChange} />
-                  <select name="swelling" onChange={handleInputChange}>
-                      <option value="">Swelling/Bleeding?</option>
-                      <option>No</option><option>Swelling</option><option>Bleeding</option>
-                  </select>
+                  <div className="form-group">
+                    <input
+                      name="nature"
+                      type="text"
+                      placeholder="Nature of emergency"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <input
+                      name="pain"
+                      type="number"
+                      placeholder="Pain level (1-10)"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <select
+                      name="swelling"
+                      onChange={handleInputChange}
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Swelling/Bleeding?
+                      </option>
+                      <option>No</option>
+                      <option>Swelling</option>
+                      <option>Bleeding</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             )}

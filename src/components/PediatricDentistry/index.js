@@ -1,4 +1,5 @@
 import { MessageCircle, CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "./index.css";
@@ -47,6 +48,13 @@ const treatments = [
 ];
 
 const PediatricDentistry = () => {
+  const navigate = useNavigate();
+
+const handleBookAppointment = () => {
+  navigate("/", {
+    state: { scrollToContact: true },
+  });
+};
   return (
     <>
       <Navbar />
@@ -122,7 +130,7 @@ const PediatricDentistry = () => {
 
                   <p>{item.description}</p>
 
-                  <button className="book-btn-service">
+                  <button className="book-btn-service" onClick={handleBookAppointment}>
                     <MessageCircle size={18} />
                     Book Appointment
                   </button>

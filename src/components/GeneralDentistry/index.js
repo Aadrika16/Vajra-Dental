@@ -1,9 +1,19 @@
 import { MessageCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "./index.css";
 
 const GeneralDentistry = () => {
+  const navigate = useNavigate();
+
+  const handleBookAppointment = () => {
+    navigate("/", {
+      state: {
+        scrollToContact: true,
+      },
+    });
+  };
   return (
     <>
       <Navbar />
@@ -34,7 +44,9 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now"><MessageCircle size={18} /> Book Now</button>
+                  <button className="book-now" onClick={handleBookAppointment}>
+                    <MessageCircle size={18} /> Book Now
+                  </button>
                 </div>
               ))}
             </div>
@@ -50,7 +62,9 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now"><MessageCircle size={18} /> Book Now</button>
+                  <button className="book-now" onClick={handleBookAppointment}>
+                    <MessageCircle size={18} /> Book Now
+                  </button>
                 </div>
               ))}
             </div>
@@ -66,7 +80,9 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now"><MessageCircle size={18} /> Book Now</button>
+                  <button className="book-now" onClick={handleBookAppointment}>
+                    <MessageCircle size={18} /> Book Now
+                  </button>
                 </div>
               ))}
             </div>
@@ -90,7 +106,7 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now">
+                  <button className="book-now" onClick={handleBookAppointment}>
                     <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
@@ -114,7 +130,7 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now">
+                  <button className="book-now" onClick={handleBookAppointment}>
                     <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
@@ -137,7 +153,7 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now">
+                  <button className="book-now" onClick={handleBookAppointment}>
                     <MessageCircle size={18} /> Book Now
                   </button>
                 </div>
@@ -157,7 +173,7 @@ const GeneralDentistry = () => {
                 <div key={index} className="category-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <button className="book-now">
+                  <button className="book-now" onClick={handleBookAppointment}>
                     <MessageCircle size={18} /> Book Now
                   </button>
                 </div>

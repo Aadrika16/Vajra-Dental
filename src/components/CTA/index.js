@@ -2,6 +2,18 @@ import AppointmentForm from "../AppointmentForm";
 import "./index.css";
 
 const CTA = () => {
+  const handleWhatsAppBooking = (e) => {
+    e.preventDefault();
+
+    const section = document.getElementById("contact");
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
     <section className="cta-section">
 
@@ -20,11 +32,11 @@ const CTA = () => {
 
           <div className="cta-buttons">
 
-            <a href="/">
+            <a href="#contact" onClick={handleWhatsAppBooking}>
               WhatsApp Booking
             </a>
 
-            <a href="/">
+            <a href="tel:+919542345000">
               Call Clinic
             </a>
           </div>
